@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Titulo -->
+    <title>Netflix Login</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <meta name="author" content="Catherine Solarte" />
+  </head>
+  <body>
+    <!-- Contenedor principal centrado en la pantalla -->
+    <div class="container">
+      <!-- Título principal  -->
+      <h1 class="main-title">Netflix</h1>
+      <!-- Formulario de login -->
+      <form class="login-form">
+        <!-- Título del formulario -->
+        <h1>Iniciar sesión</h1>
+        <!-- Campo de correo electrónico -->
+        <div class="input-group">
+          <label for="email">Correo electrónico o número de teléfono</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <!-- Campo de contraseña -->
+        <div class="input-group">
+          <label for="password">Contraseña</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <!-- Botón de iniciar sesión -->
+        <button type="submit">Iniciar sesión</button>
+        <!-- Recordatorio de sesión -->
+        <div class="form-footer">
+          <div class="remember-me">
+            <input type="checkbox" id="remember" name="remember" />
+            <label for="remember">Recuérdame</label>
+          </div>
+          <div class="help">
+            <a href="#">¿Necesitas ayuda?</a>
+          </div>
+        </div>
+        <!-- registrarse -->
+        <div class="signup">
+          <p>¿Primera vez en Netflix? <a href="#">Suscríbete ya.</a></p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

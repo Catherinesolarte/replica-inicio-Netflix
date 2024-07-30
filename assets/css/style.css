@@ -1,0 +1,138 @@
+/* márgenes y fuente */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url(../img/fondo.jpeg); /*Imagen de fondo*/
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  position: relative; /* posicionamiento del título */
+}
+
+/* título principal */
+.main-title {
+  align-self: flex-start;
+  color: red;
+  text-shadow: 2px 2px 4px black;
+  font-size: 3rem;
+  margin: 20px; /* Ajustar para dar espacio alrededor del título */
+  position: relative; /* Alinear en la esquina */
+  top: 0;
+  left: 0;
+}
+
+/* Contenedor principal centrado */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  flex: 1;
+}
+
+/* Estilos para el formulario de login */
+.login-form {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 60px 68px 40px;
+  max-width: 450px;
+  width: 100%;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.login-form h2 {
+  margin-bottom: 28px;
+}
+
+/* Grupo de entrada para correo electrónico y contraseña */
+.input-group {
+  margin-bottom: 16px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  background: #333;
+  border: 1px solid #333;
+  border-radius: 4px;
+  color: white;
+  box-sizing: border-box;
+}
+
+/* Botón de iniciar sesión */
+button {
+  width: 100%;
+  padding: 16px;
+  background-color: #e50914;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 24px;
+}
+
+/* Footer del formulario */
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.remember-me input {
+  margin-right: 8px;
+}
+
+.help a {
+  color: #b3b3b3;
+  text-decoration: none;
+}
+
+.help a:hover {
+  text-decoration: underline;
+}
+
+/* Sección de registro */
+.signup {
+  margin-top: 16px;
+}
+
+.signup p {
+  color: #b3b3b3;
+}
+
+.signup a {
+  color: white;
+  text-decoration: none;
+}
+
+.signup a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+  body {
+    background-image: none; /* Elimina la imagen de fondo en dispositivos más pequeños */
+    background-color: black; /* Ajusta el color de fondo en lugar de la imagen */
+  }
+  .container {
+    padding: 10px;
+  }
+
+  .login-form {
+    padding: 40px 20px;
+  }
+}
